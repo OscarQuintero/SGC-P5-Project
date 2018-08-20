@@ -15,8 +15,8 @@ nav {
 
 nav ul {
 	list-style: none;
-	/*border-style: solid;
-	border-color: gray;*/
+	border-style: solid;
+	border-color: gray;
 
 	/*margin: 0;
 	display: flex;
