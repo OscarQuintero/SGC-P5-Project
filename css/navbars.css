@@ -18,7 +18,8 @@ nav ul {
 	border-style: solid;
 	border-color: gray;
 
-	/*margin: 0;
+	margin: 0;
+	/*
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
