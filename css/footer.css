@@ -30,10 +30,10 @@ footer ul.logos {
 }
 
 footer ul.logos li {
-	/*border-style: solid;
+	border-style: solid;
 	flex-basis: 20%;
 	flex-grow: 20%;
-	flex-shrink: 10%;*/
+	flex-shrink: 10%;
 }
 
 footer ul.logos li a {
