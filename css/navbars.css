@@ -32,10 +32,10 @@ nav li {
 	/*width: 15%;
 	display: inline-block;
 	margin: 0 0;
-	padding: 0.1em 1em;
+	padding: 0.1em 1em;*/
 	flex-basis: auto;
 	flex-grow: 0;
-	flex-shrink: 1;*/
+	flex-shrink: 1;
 }
 
 nav a {
