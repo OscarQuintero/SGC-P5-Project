@@ -1,1 +1,55 @@
-footer.css
+
+footer {
+	border-style: solid;
+	font-size: 1em;
+	font-family: sans-serif;
+
+	
+	padding: 3em;
+
+
+}
+
+footer section {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+
+footer ul{
+	/*list-style: none;*/
+
+}
+
+footer ul.logos {
+	/*display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: stretch;*/
+}
+
+footer ul.logos li {
+	/*border-style: solid;
+	flex-basis: 20%;
+	flex-grow: 20%;
+	flex-shrink: 10%;*/
+}
+
+footer ul.logos li a {
+	display: block;
+	/*width: 100%;*/
+}
+
+figure.logo {
+	border-style: dotted;
+	display: block;
+}
+
+figure.logo img {
+	width: 80%;
+	
+	
+	
+}
+
