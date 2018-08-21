@@ -8,9 +8,6 @@ nav {
 	
 	font-size: 1.5em;
 	font-family: Arial, sans-serif;
-	
-	
-
 }
 
 nav ul {
@@ -33,7 +30,7 @@ nav li {
 	display: inline-block;
 	*/
 	margin: 0 0;
-	padding: 0.1em 1em;
+	padding: 0;
 	flex-basis: auto;
 	flex-grow: 0;
 	flex-shrink: 1;
@@ -42,6 +39,7 @@ nav li {
 nav a {
 	/*text-decoration: none;
 	color: white;*/
+	padding: 0.1em 1em;
 	width: 100%;
 	/*transition: color 0.3s;
 	transition-timing-function: ease-in;*/
