@@ -31,9 +31,9 @@ nav li {
 	*/
 	margin: 0 0;
 	padding: 0;
-	flex-basis: auto;
+	flex-basis: content;
 	flex-grow: 0;
-	flex-shrink: 1;
+	flex-shrink: content;
 }
 
 nav a {
@@ -45,6 +45,7 @@ nav a {
 	transition-timing-function: ease-in;*/
 
 	/*z-index: 10;*/
+	text-align: center;
 }
 nav a:visited {
 	/*color: white;*/
@@ -64,11 +65,18 @@ nav a:hover {
 	position: sticky;
 	top: 0px;*/	
 }
+
+#nav-bar-with-external-links ul {
+	justify-content: flex-end;
+}
 #nav-bar-with-internal-links {
 	/*background-color: rgba(26, 82, 118, 0.9);*/
 
 	/*-webkit-filter: blur(2px);
 	filter: blur(2px);*/
+}
+#nav-bar-with-internal-links ul {
+
 }
 
 /*COlores de la paleta de la identidad institucional:
