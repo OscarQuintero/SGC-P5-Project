@@ -39,11 +39,13 @@ footer ul.logos li {
 footer ul.logos li a {
 	display: block;
 	width: 100%;
+	
 }
 
 figure.logo {
 	border-style: dotted;
 	display: block;
+
 }
 
 figure.logo img {
@@ -51,5 +53,9 @@ figure.logo img {
 	
 	
 	
+}
+
+figure.logo figcaption {
+	text-align: center;
 }
 
