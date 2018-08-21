@@ -18,6 +18,17 @@ footer section {
 
 footer ul{
 	list-style: none;
+	border-style: dotted;
+	padding: 0 1em;
+}
+
+footer a {
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer a:visited {
 
 }
 
@@ -58,4 +69,6 @@ figure.logo img {
 figure.logo figcaption {
 	text-align: center;
 }
+
+
 

@@ -6,7 +6,7 @@ header {
 	position: sticky;
 	top: 0px;	
 
-	width: 100%;
+	width: 100%; 
 }
 nav {
 	
@@ -24,7 +24,8 @@ nav ul {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: stretch;
+
 }
 
 nav li {
@@ -41,9 +42,10 @@ nav li {
 }
 
 nav a {
-	/*text-decoration: none;
+	text-decoration: none;
+	/*
 	color: white;*/
-	padding: 0.1em 1em;
+	padding: 0em 1em;
 	width: 100%;
 	/*transition: color 0.3s;
 	transition-timing-function: ease-in;*/
@@ -55,9 +57,12 @@ nav a:visited {
 	/*color: white;*/
 }
 nav a:hover {
-	/*text-decoration: none;
+	text-decoration: none;
+
+	/*
+
 	color: grey;
-	width: 100%;*/
+	*/
 
 }
 
