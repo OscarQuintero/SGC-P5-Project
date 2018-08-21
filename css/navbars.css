@@ -2,6 +2,10 @@
 header {
 	/*position: fixed;
 	z-index: 1;*/
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;	
+
 	width: 100%;
 }
 nav {
@@ -61,19 +65,21 @@ nav a:hover {
 
 	/*background-color: rgba( 38, 124, 152, 0.8);*/
 
-	/*position: -webkit-sticky;
-	position: sticky;
-	top: 0px;*/	
+	
 }
 
 #nav-bar-with-external-links ul {
 	justify-content: flex-end;
+
+	
 }
 #nav-bar-with-internal-links {
 	/*background-color: rgba(26, 82, 118, 0.9);*/
 
 	/*-webkit-filter: blur(2px);
 	filter: blur(2px);*/
+
+
 }
 #nav-bar-with-internal-links ul {
 
