@@ -61,6 +61,11 @@ nav a:hover {
 
 }
 
+.nav-bar-submenu {
+	display: flex;
+	flex-direction: column;
+}
+
 #nav-bar-with-external-links {
 
 	/*background-color: rgba( 38, 124, 152, 0.8);*/
