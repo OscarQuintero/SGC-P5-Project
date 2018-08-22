@@ -65,6 +65,31 @@ nav a:hover {
 	*/
 
 }
+.nav-bar-submenu ul{
+	display: none;
+}
+.nav-bar-submenu:hover ul {
+	
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	padding: 0px;
+
+}
+.nav-bar-submenu ul li {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
+
+}
+.nav-bar-submenu ul li a {
+	
+	flex-basis: fill;
+	text-align: left;
+}
+
 
 #nav-bar-with-external-links {
 
