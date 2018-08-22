@@ -60,11 +60,31 @@ nav a:hover {
 	width: 100%;*/
 
 }
-
-.nav-bar-submenu {
+.nav-bar-submenu ul{
+	/*display: none;*/
+/*}
+.nav-bar-submenu:hover ul {*/
+	
+	position: absolute;
 	display: flex;
 	flex-direction: column;
+	align-items: stretch;
+	padding: 0px;
+
 }
+.nav-bar-submenu ul li {
+	display: inline-block;
+	/*flex-direction: row;
+	text-align: right;*/
+
+}
+.nav-bar-submenu ul li a {
+	
+	width: 100%;
+	
+
+}
+
 
 #nav-bar-with-external-links {
 
