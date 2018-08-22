@@ -73,16 +73,16 @@ nav a:hover {
 
 }
 .nav-bar-submenu ul li {
-	display: inline-block;
-	/*flex-direction: row;
-	text-align: right;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	
 
 }
 .nav-bar-submenu ul li a {
 	
-	width: 100%;
-	
-
+	flex-basis: fill;
+	text-align: left;
 }
 
 
