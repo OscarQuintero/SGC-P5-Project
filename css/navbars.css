@@ -75,11 +75,13 @@ nav a:hover {
 
 #nav-bar-with-external-links ul {
 	justify-content: flex-end;
+	background-color: rgba(255,255,255,0.9);
 
 	
 }
 #nav-bar-with-internal-links {
 	/*background-color: rgba(26, 82, 118, 0.9);*/
+	background-color: rgba(255,255,255,0.75);
 
 	/*-webkit-filter: blur(2px);
 	filter: blur(2px);*/
