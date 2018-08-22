@@ -61,9 +61,9 @@ nav a:hover {
 
 }
 .nav-bar-submenu ul{
-	/*display: none;*/
-/*}
-.nav-bar-submenu:hover ul {*/
+	display: none;
+}
+.nav-bar-submenu:hover ul {
 	
 	position: absolute;
 	display: flex;
