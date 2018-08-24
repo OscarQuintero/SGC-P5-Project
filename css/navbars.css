@@ -39,6 +39,7 @@ nav li {
 	flex-basis: content;
 	flex-grow: 0;
 	flex-shrink: content;
+	/*height: 2em;*/
 }
 
 nav a {
