@@ -107,9 +107,43 @@ i {
 	border-style: none;
 }
 
-article {
-	
+main.process {
+	width: 73%;
+	display: inline-block;
 }
+h1 {
+	font-size: 2em;
+	font-family: sans-serif;
+	margin: 2em 0.8em;
+}
+
+article {
+	font-size: 1em;
+	font-family: sans-serif;
+	margin: 1.5em;
+	padding: 1em;
+
+}
+article ul {
+	list-style: none;
+	margin: 0.3em 0;
+	padding: 0;
+}
+
+article li{
+	padding: 0.2em 0.1em;
+}
+article h2 {
+	font-size: 1.5em;
+	margin: 0em 0.5em 1em;
+
+}
+article h3 {
+	font-size: 0.7em;
+	margin: 0 3em;
+}
+
+
 
 
 /*
