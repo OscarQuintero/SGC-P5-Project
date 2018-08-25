@@ -1,0 +1,23 @@
+aside {
+	visibility: hidden;
+	font-family: sans-serif;
+	width: 25%;
+	/*height: 100vh;
+	position: fixed;*/
+	display: inline-block;
+	
+}
+aside ul {
+	list-style: none;
+}
+
+aside a {
+	text-decoration: none;
+}
+aside a:visited {
+	text-decoration: none;
+}
+aside a:hover {
+	text-decoration: none;
+
+}
