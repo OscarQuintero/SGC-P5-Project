@@ -1,14 +1,23 @@
 aside {
-	visibility: hidden;
+	/*visibility: hidden;*/
+	background-color: gray;
 	font-family: sans-serif;
-	width: 20%;
-	/*height: 100vh;
-	position: fixed;*/
-	display: inline-block;
+	flex-basis: 25%;
+	/*flex-shrink: 0;*/
+	/*flex-grow: 30%;*/
+	/*width: 20%;*/
+	/*height: 100vh;*/
+/*	position: fixed;
+*/	/*display: inline-block;*/
 	
+}
+
+aside h2 {
+	text-align: center;
 }
 aside ul {
 	list-style: none;
+	padding: 0 1em;
 }
 
 aside a {
