@@ -122,7 +122,7 @@ main.process {
 	/*flex-shrink: 1;*/
 	/*flex-grow: 70%;*/
 	padding: 3em;
-	/*background-color: yellow;*/
+	background-color: yellow;
 }
 h1 {
 	font-size: 2em;
