@@ -1,7 +1,31 @@
+<?php
+	// establecer conexión
+	$hostDB = 'localhost';
+	$userDB = 'webapp';
+	$passwordDB = '1234';
+	$DB = 'sgc';
+	$connection = new mysqli($hostDB, $userDB, $passwordDB, $DB);
+
+	if ($connection->connect_error) {
+		die("----> " . $connection->connect_error);
+	}
+	
+	// variables par incrustar en el documento
+	$IDProcesoMatrizActual = "";
+	$NombreProcesoMatrizActual = "";
+
+	// procesar la peticion por GET 
+	$IDProcesoMatrizActual = $_GET['IDProcesoMatriz'];
+
+	// Solicitar nombre de Proceso
+
+	// cerrar conexión
+	$connection->close();
+?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>SGC P5 - #</title>
+	<title>SGC P5 - <?php echo $IDProcesoMatrizActual;?></title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/lateral-bar.css">
@@ -20,7 +44,7 @@
 		</ul>
 	</aside>
 	<main class="process">
-		<h1>Proceso X: ############</h1>
+		<h1>Proceso <?php echo $IDProcesoMatrizActual; ?>: <?php echo $NombreProcesoMatrizActual;?></h1>
 
 		<article>
 			<h2>Mejora continua</h2>
