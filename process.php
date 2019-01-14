@@ -18,6 +18,13 @@
 	$IDProcesoMatrizActual = $_GET['IDProcesoMatriz'];
 
 	// Solicitar nombre de Proceso
+	$sqlQuery = "SELECT Nombre FROM ProcesoMatriz WHERE IDProcesoMatriz = $IDProcesoMatrizActual;";
+	$result = $connection->query($sqlQuery);
+	if ($result->num_rows <= 0) {
+		die("No se pudo completar la solicitud a la BD... :'(");
+	}
+	$firstRow = $result->fetch_assoc();
+	$NombreProcesoMatrizActual = $firstRow['Nombre'];
 
 	// cerrar conexión
 	$connection->close();
@@ -36,7 +43,7 @@
 	</header>
 	<div class="main-container">
 	<aside>
-		<h2>Menú lateral</h2>
+		<h2><?php echo $NombreProcesoMatrizActual;?></h2>
 		<ul>
 			<li>Mejora continua</li>
 			<li>No conformidad</li>
@@ -44,7 +51,7 @@
 		</ul>
 	</aside>
 	<main class="process">
-		<h1>Proceso <?php echo $IDProcesoMatrizActual; ?>: <?php echo $NombreProcesoMatrizActual;?></h1>
+		<h1>Proceso <?php echo $IDProcesoMatrizActual;?>: <?php echo $NombreProcesoMatrizActual;?></h1>
 
 		<article>
 			<h2>Mejora continua</h2>
