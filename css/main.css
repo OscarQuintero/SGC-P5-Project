@@ -1,6 +1,6 @@
 * {
-	border-style: solid;
-	border-width: 1px; 
+	/*border-style: solid;*/
+	/*border-width: 1px; */
 }
 
 body {
@@ -16,20 +16,20 @@ body {
 
 
 #hero-sgc {
-	/*color: white;
+	color: white;
 	background-color: #F1C40F;
 	background-image: url("../img/ElCapitan2.jpg");url("http://apple.com/mx/macos/high-sierra/overview/hero/image_large.jpg");
 	background-repeat: no-repeat;
-	background-attachment: fixed;*/
+	background-attachment: fixed;
 	/*border-color: gray;
 	border-style: solid;
 	border-width: 1px;*/
 	padding: 9em 6em 2em;
 
-	/*transition-timing-function: ease-in;
-	transition: background-image 2s;
+	transition-timing-function: ease-in;
+	transition: background-image 3s;
 	-webkit-transition-timing-function: ease-in;
-	-webkit-transition: background-image 2s;*/
+	-webkit-transition: background-image 3s;
 
 }
 
@@ -122,7 +122,7 @@ main.process {
 	/*flex-shrink: 1;*/
 	/*flex-grow: 70%;*/
 	padding: 3em;
-	background-color: yellow;
+	/*background-color: yellow;*/
 }
 h1 {
 	font-size: 2em;
@@ -136,7 +136,7 @@ article {
 	font-family: sans-serif;
 	margin: 1.5em 0;
 	padding: 1em;
-	background-color: lime;
+	/*background-color: lime;*/
 }
 article ul {
 	list-style: none;
