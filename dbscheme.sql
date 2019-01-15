@@ -135,6 +135,28 @@ INSERT INTO Subproceso VALUES (3,10, "Acciones correctivas");
 
 ----------------------
 
+INSERT INTO Recurso VALUES (1,1,10,2, "Proyecto de mejora", "10.3-RE-MCO-MC-01");
+INSERT INTO Recurso VALUES (2,1,10,2, "Control de estatus de proyectos de mejora", "10.3-RE-MCO-MC-02");
+INSERT INTO Recurso VALUES (1,2,10,5, "Mapeo Producto No Conforme", "10.2-MP-MCO-NC-01");
+INSERT INTO Recurso VALUES (2,2,10,2, "Control de estatus de PNC o Queja", "10.2-RE-MCO-NC-01");
+INSERT INTO Recurso VALUES (3,2,10,2, "Queja, PNC, Sugerencia", "10.2-RE-MCO-NC-02");
+INSERT INTO Recurso VALUES (4,2,10,2, "Respuesta al usuario de queja o sugerencia", "10.2-RE-MCO-NC-03");
+INSERT INTO Recurso VALUES (5,2,10,1, "Matriz de criterio de producto no conforme", "10.2-RE-MCO-NC-04");
+INSERT INTO Recurso VALUES (1,3,10,5, "Mapeo Accion correctiva", "10.2-MP-MCO-A-01");
+INSERT INTO Recurso VALUES (2,3,10,3, "Guía para realización de 8 disciplinas e Ishikawa", "10.2-RE-MCO-AC-01");
+INSERT INTO Recurso VALUES (3,3,10,2, "Acción correctiva", "10.2-RE-MCO-AC-02");
+INSERT INTO Recurso VALUES (4,3,10,2, "Análisis de causa raíz", "10.2-RE-MCO-AC-03");
+INSERT INTO Recurso VALUES (5,3,10,2, "Control de estatus de no conformidades", "10.2-RE-MCO-AC-04");
+
+
+
+
+
+
+
+
+
+
 
 
 
