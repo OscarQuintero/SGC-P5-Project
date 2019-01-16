@@ -135,6 +135,24 @@ INSERT INTO Subproceso VALUES (3,10, "Acciones correctivas");
 
 ----------------------
 
+INSERT INTO Recurso VALUES (1,1,4,1, "Contexto de la Organización (FODA)", "4.1-DO-COO-CO-01");
+INSERT INTO Recurso VALUES (2,1,4,1, "Partes Interesadas", "4.2-DO-COO-CO-01");
+INSERT INTO Recurso VALUES (3,1,4,1, "Manual de Calidad", "4.3 DO-COO-CO-01");
+INSERT INTO Recurso VALUES (1,1,5,5, "Comunicación Interna", "7.4-MP-LID-DIR-01");
+INSERT INTO Recurso VALUES (2,1,5,1, "Matriz de Comunicación Interna", "7.4-DO- LID- DIR-02");
+INSERT INTO Recurso VALUES (3,1,5,2, "Minuta", "7.4-RE-LID-DIR-01");
+INSERT INTO Recurso VALUES (4,1,5,1, "Manual de Organización", "5.1-MO-LID-DIR-01");
+INSERT INTO Recurso VALUES (5,1,5,1, "Política de Calidad", "5.1-DO-LID-DIR-01");
+INSERT INTO Recurso VALUES (6,1,5,1, "Misión", "5.1-DO-LID-DIR-02");
+INSERT INTO Recurso VALUES (7,1,5,1, "Visión", "5.1-DO-LID-DIR-03");
+INSERT INTO Recurso VALUES (8,1,5,2, "Organigrama", "5.3-DO-LID-DIR-04");
+INSERT INTO Recurso VALUES (1,1,6,1, "Riesgos y oportunidades", "6.1-DO-PLA-PL-01");
+INSERT INTO Recurso VALUES (2,1,6,1, "Objetivos de Calidad", "6.2-DO-PLA-PL-01");
+INSERT INTO Recurso VALUES (3,1,6,0, "Matriz de Objetivos de Calidad", "6.2-DO-PLA-PL-02");
+INSERT INTO Recurso VALUES (4,1,6,0, "Matriz de objetivos Gestión de Recursos", "6.2-DO-PLA-PL-03");
+INSERT INTO Recurso VALUES (5,1,6,1, "Control de la información personal, propiedad del cliente (Matriz)", "6.2-DO-PLA-PL-04");
+
+
 INSERT INTO Recurso VALUES (1,1,10,2, "Proyecto de mejora", "10.3-RE-MCO-MC-01");
 INSERT INTO Recurso VALUES (2,1,10,2, "Control de estatus de proyectos de mejora", "10.3-RE-MCO-MC-02");
 INSERT INTO Recurso VALUES (1,2,10,5, "Mapeo Producto No Conforme", "10.2-MP-MCO-NC-01");
