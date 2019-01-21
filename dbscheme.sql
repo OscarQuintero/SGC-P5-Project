@@ -152,6 +152,14 @@ INSERT INTO Recurso VALUES (3,1,6,0, "Matriz de Objetivos de Calidad", "6.2-DO-P
 INSERT INTO Recurso VALUES (4,1,6,0, "Matriz de objetivos Gestión de Recursos", "6.2-DO-PLA-PL-03");
 INSERT INTO Recurso VALUES (5,1,6,1, "Control de la información personal, propiedad del cliente (Matriz)", "6.2-DO-PLA-PL-04");
 
+INSERT INTO Recurso VALUES (1,1,9,5, "Mapeo Auditorias Intenas", "9.2-MP-ACE-AI-01");
+INSERT INTO Recurso VALUES (2,1,9,2, "Programa anual de auditorias", "9.2-RE-ACE-AI-01");
+INSERT INTO Recurso VALUES (3,1,9,2, "Check-List Auditoria Interna ISO 9001:2015", "9.2-RE-ACE-AI-02");
+INSERT INTO Recurso VALUES (4,1,9,2, "Evaluación del desdempeño de auditor", "9.2-RE-ACE-AI-03");
+INSERT INTO Recurso VALUES (5,1,9,2, "Informe de auditoria", "9.2-RE-ACE-AI-04");
+INSERT INTO Recurso VALUES (6,1,9,2, "Plan de auditoria", "9.2-RE-ACE-AI-05");
+INSERT INTO Recurso VALUES (7,1,9,2, "Guía de auditoria Interma SGC", "9.2-RE-ACE-AI-06");
+
 
 INSERT INTO Recurso VALUES (1,1,10,2, "Proyecto de mejora", "10.3-RE-MCO-MC-01");
 INSERT INTO Recurso VALUES (2,1,10,2, "Control de estatus de proyectos de mejora", "10.3-RE-MCO-MC-02");
