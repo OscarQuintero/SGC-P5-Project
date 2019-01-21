@@ -95,39 +95,49 @@
 			?>
 			<article>
 				<h2><?php echo $ListaDeSubprocesos[$k]['Nombre'];?></h2>
-				<div>
-					<h3>Mapeos</h3>
-					<ul>
-						<li><a href="#">Recurso -></a></li>
-						<li><a href="#">Recurso -></a></li>						
-					</ul>
-				</div>
-				<div>
-					<h3>Documentos</h3>
-					<ul>
-						
-					</ul>	
-				</div>
-				<div>
-					<h3>Formatos</h3>
-					<ul>
-						
-					</ul>
+				<?php 
+					// for ($i=0; $i < $CantidadDeTiposDeRecurso; $i++) { 
+						//echo $ListaDeTiposDeRecurso[$i]['Nombre'];
+						?>
+						<div>
+							<h3><?php /*echo $ListaDeTiposDeRecurso[$i]['Nombre']*/;?></h3>
+							<ul>
+								
+								<?php 
+									//Obtener Lista de Recursos de Mapeo de este Subproceso
+									$sqlQuery = "SELECT IDRecurso, Nombre FROM Recurso 
+													WHERE 
+														IDProcesoMatriz = ".$IDProcesoMatrizActual.	
+														" AND IDSubproceso = ".$ListaDeSubprocesos[$k]['IDSubproceso']." AND "./*$ListaDeTiposDeRecurso[$i]['IDTipoDeRecurso']*/"1=1".";";
+									$result = $connection->query($sqlQuery);
+									if ($result->num_rows <= 0) {
+										echo ("No hay recursos disponobles -".$connection->connect_error);
+									}
+									$CantidadDeRecursos = 0;
+									$ListaDeRecursos = array();
+									while ($row = $result->fetch_assoc()) {
+										$ListaDeRecursos[$CantidadDeRecursos]['IDRecurso'] = $row['IDRecurso'];
+										$ListaDeRecursos[$CantidadDeRecursos]['Nombre'] = $row['Nombre'];
 
-				</div>
-				<div>
-					<h3>Instructivos</h3>
-					<ul>
-						
-					</ul>
-				</div>
-				<div>
-					<h3>Guías</h3>
-					<ul>
-						
-					</ul>
-				</div>		
-
+										$CantidadDeRecursos++;
+									}
+								?>
+								<?php
+									for ($i=0; $i < $CantidadDeRecursos; $i++) { 
+										?>
+										<li>
+											<a href="resource.php?IDProcesoMatriz=<?php echo $IDProcesoMatrizActual;?>&IDSubproceso=<?php echo $ListaDeSubprocesos[$k]['IDSubproceso'];?>&IDRecurso=<?php echo $ListaDeRecursos[$i]['IDRecurso'];?>">
+												<?php echo $ListaDeRecursos[$i]['Nombre'];?>	
+											</a>
+										</li>
+										<?php
+									}												
+								?>
+							</ul>
+						</div>
+						<?php
+					// }
+				?>
 			</article>
 			<?php					
 			}
