@@ -27,20 +27,36 @@
 	$NombreProcesoMatrizActual = $firstRow['Nombre'];
 
 	//Obtener subprocesos
-	$sqlQuery = "SELECT Nombre FROM Subproceso WHERE IDProcesoMatriz = $IDProcesoMatrizActual;";
+	$sqlQuery = "SELECT IDSubproceso, Nombre FROM Subproceso WHERE IDProcesoMatriz = $IDProcesoMatrizActual;";
 	$result = $connection->query($sqlQuery);
 	if ($result->num_rows <= 0) {
 		die("No se pudo completar la solicitud a la BD... :'(");
 	}
-///***********************************************
-
+//
 	$CantidadDeSubprocesos = 0;
 	$ListaDeSubprocesos = array();
 	while ($row = $result->fetch_assoc()) {
-		$ListaDeSubprocesos[$CantidadDeSubprocesos] = $row['Nombre'];
+		$ListaDeSubprocesos[$CantidadDeSubprocesos]['IDSubproceso'] = $row['IDSubproceso'];
+		$ListaDeSubprocesos[$CantidadDeSubprocesos]['Nombre'] = $row['Nombre'];
 		$CantidadDeSubprocesos++;
 	}
 
+	//**********************************************
+	//Obtener tipos de Recurso
+	$sqlQuery = "SELECT IDTipoDeRecurso, Nombre FROM TipoDeRecurso;";
+	$result = $connection->query($sqlQuery);
+	if ($result->num_rows <= 0) {
+		die("No se pudo completar la solicitud a la BD... :'(");
+	}
+	$CantidadDeTiposDeRecurso = 0;
+	$ListaDeTiposDeRecurso = array();
+	while ($row = $result->fetch_assoc()) {
+		$ListaDeTiposDeRecurso[$CantidadDeTiposDeRecurso]['IDTipoDeRecurso'] = $row['IDTipoDeRecurso'];
+
+		$ListaDeTiposDeRecurso[$CantidadDeTiposDeRecurso]['Nombre'] = $row['Nombre'];
+
+		$CantidadDeTiposDeRecurso++;
+	}
 	
 ?>
 <!DOCTYPE html>
@@ -63,7 +79,7 @@
 			for($k =0; $k < $CantidadDeSubprocesos; $k++) 
 			{
 			?>
-			<li><?php echo $ListaDeSubprocesos[$k];?></li>
+			<li><?php echo $ListaDeSubprocesos[$k]['Nombre'];?></li>
 			<?php					
 			}
 		?>
@@ -78,10 +94,12 @@
 			{
 			?>
 			<article>
-				<h2><?php echo $ListaDeSubprocesos[$k];?></h2>
+				<h2><?php echo $ListaDeSubprocesos[$k]['Nombre'];?></h2>
 				<div>
 					<h3>Mapeos</h3>
-					<ul>						
+					<ul>
+						<li><a href="#">Recurso -></a></li>
+						<li><a href="#">Recurso -></a></li>						
 					</ul>
 				</div>
 				<div>
