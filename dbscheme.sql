@@ -79,7 +79,7 @@ GRANT ALL ON sgc.* TO 'webapp'@'localhost';
 
 ------------------------
 
-
+INSERT INTO TipoDeRecurso VALUES (0, "No Definido");
 INSERT INTO TipoDeRecurso VALUES (1, "Documento");
 INSERT INTO TipoDeRecurso VALUES (2, "Formato");
 INSERT INTO TipoDeRecurso VALUES (3, "Guía");
