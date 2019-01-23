@@ -131,6 +131,12 @@ h1 {
 
 }
 
+h2 {
+	font-size: 1.5em;
+	font-family: sans-serif;
+	margin: 2em 0em;
+}
+
 article {
 	font-size: 1em;
 	font-family: sans-serif;
@@ -157,8 +163,57 @@ article h3 {
 	margin: 0 0em;
 }
 
+main.resource {
+	/*flex-basis: 100%;
+	display: flex;*/
+	width: 90%;
+
+}
+
+main.resource h1 {
+	text-align: center;
+	margin: 5em 0;
+}
+
+main.resource h2 {
+	text-align: center;
+}
+
+#files-panel {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	border-style: solid;
+	height: 100vh;
+}
+
+.resource figure {
+	flex-basis: 20%;
+	flex-grow: 40%;
+	flex-shrink: 20%;
+	background-color: gray;
+	margin: 0;
+	padding: 1em;
+}
+
+.resource img {
+	width: 100%;
+	margin: 0;
+}
 
 
+.link-to-resource::after {
+	content: " ›";
+	font-size: 1.5em;
+	color: blue;	
+}
+
+.link-to-resource a {
+	display: inline-block;
+}
 
 /*
  #A04000

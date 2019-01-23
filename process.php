@@ -125,8 +125,8 @@
 								<?php
 									for ($i=0; $i < $CantidadDeRecursos; $i++) { 
 										?>
-										<li>
-											<a href="resource.php?IDProcesoMatriz=<?php echo $IDProcesoMatrizActual;?>&IDSubproceso=<?php echo $ListaDeSubprocesos[$k]['IDSubproceso'];?>&IDRecurso=<?php echo $ListaDeRecursos[$i]['IDRecurso'];?>">
+										<li class="link-to-resource">
+											<a  href="resource.php?IDProcesoMatriz=<?php echo $IDProcesoMatrizActual;?>&IDSubproceso=<?php echo $ListaDeSubprocesos[$k]['IDSubproceso'];?>&IDRecurso=<?php echo $ListaDeRecursos[$i]['IDRecurso'];?>">
 												<?php echo $ListaDeRecursos[$i]['Nombre'];?>	
 											</a>
 										</li>
